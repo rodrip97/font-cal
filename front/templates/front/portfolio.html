@@ -1,0 +1,378 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Document title -->
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="{% static 'images/logo-2.png' %}">
+    <!-- Stylesheets & Fonts -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CRajdhani:400,600,700"
+        rel="stylesheet">
+    <!-- Plugins Stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/loader/loaders.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome/font-awesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aos/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/swiper/swiper.css '%}">
+    <link rel="stylesheet" href="{% static 'css/lightgallery.min.css '%}">
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+</head>
+
+<body>
+    <!-- Loader Start -->
+    <div class="css-loader">
+        <div class="loader-inner line-scale d-flex align-items-center justify-content-center"></div>
+    </div>
+    <!-- Loader End -->
+    <!-- Header Start -->
+    <header class="position-absolute w-100">
+        <div class="container">
+            <div class="top-header d-none d-sm-flex justify-content-between align-items-center">
+                <div class="contact">
+                    <a href="" class="tel"><i class="fa fa-phone" aria-hidden="true"></i>+718-280-5707</a>
+                    <a href=""><i class="fa fa-envelope"
+                            aria-hidden="true"></i>info@internationalconcrete.net</a>
+                </div>
+                <nav class="d-flex aic">
+                    <a href="#" class="login"><i class="fa fa-user" aria-hidden="true"></i>Login</a>
+                    <ul class="nav social d-none d-md-flex">
+                        <li><a href="https://www.facebook.com/International-Concrete-Inc-103279948096972/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/international_concrete/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="#"><img src="{% static 'front/logo.png' %}" alt=""></a>
+                <div class="group d-flex align-items-center">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="login-icon d-sm-none" href="#"><i class="fa fa-user"></i></a>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
+                    </ul>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Hero Start -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 offset-md-1 col-md-11">
+                    <div class="swiper-container hero-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-content d-flex align-items-center">
+                                <div class="single-slide">
+                                    <h2 data-aos="fade-right" data-aos-delay="200">Past projects</h2>
+                                    <p data-aos="fade-right" data-aos-delay="200"><img class="mr-4" src="media/images/slider1.png" alt="404 not found">
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-content d-flex align-items-center">
+                                <div class="single-slide">
+                                    <h2 data-aos="fade-right" data-aos-delay="200">Past Projects</h2>
+                                    <p data-aos="fade-right" data-aos-delay="200"><img class="mr-4" src="media/images/slider3.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-content d-flex align-items-center">
+                                <div class="single-slide">
+                                    <h2 data-aos="fade-right" data-aos-delay="200">Past Projects</h2>
+                                    <p data-aos="fade-right" data-aos-delay="200"><img class="mr-4" src="media/images/slider4.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-content d-flex align-items-center">
+                                <div class="single-slide">
+                                    <h2 data-aos="fade-right" data-aos-delay="200">Past Projects</h2>
+                                    <p data-aos="fade-right" data-aos-delay="200"><img class="mr-4" src="media/images/training1.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Add Control -->
+            <span class="arr-left"><i class="fa fa-angle-left"></i></span>
+            <span class="arr-right"><i class="fa fa-angle-right"></i></span>
+        </div>
+        <div class="texture"></div>
+        <div class="diag-bg"></div>
+    </section>
+    <!-- Hero End -->
+    <!-- Call To Action Start -->
+    <section class="cta" data-aos="fade-up" data-aos-delay="0">
+        <div class="container">
+            <div class="cta-content d-xl-flex align-items-center justify-content-around text-center text-xl-left">
+                <div class="content" data-aos="fade-right" data-aos-delay="200">
+                    <h2>International Concrete</h2>
+                    <p>Welcome to our world of excellence.</p>
+                </div>
+                <div class="subscribe-btn" data-aos="fade-left" data-aos-delay="400" data-aos-offset="0">
+                    <a href="#" class="btn btn-primary">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action End -->
+    <!-- Services Start -->
+    <section class="services">
+        <div class="container">
+            <div class="title text-center">
+                <h6>Over 5 years of experience</h6>
+                <h1 class="title-blue">Why Choose Us</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="media" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
+                            <img class="mr-4" src="media/images/service1.png" alt="">
+                            <div class="media-body">
+                                <h5>Respected</h5>
+                                Here at International Concrete we have established ourselves as one of the leading growing companies in the NYC metro area having worked across all 5 boroughs.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="media" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
+                            <img class="mr-4" src="media/images/service2.png" alt="Web Development">
+                            <div class="media-body">
+                                <h5>Testing for perfection</h5>
+                                We have our own team of dedicated engineers and project managers assuring every progress is made according to plans and guidelines.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="media" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+                            <img class="mr-4" src="media/images/service3.png" alt="Web Development">
+                            <div class="media-body">
+                                <h5>Discussion of the idea</h5>
+                               We proud ourselves in the quality of our work and part of it comes from always discussing changes and plans in order to satisfy the customer.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services End -->
+    <!-- Featured Start -->
+    <section class="featured">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
+                    <div class="title">
+                        <h1 class="title-blue">Our own Crew and fleet</h1>
+                    </div>
+                    <p>One of the reasons we have received so much praise is because of our dedicated team of workers.
+                    From our carpenters to our drivers. We have our own fleet who's ready to be on the spot whenever needed so that your project will never be delayed.
+                    We also proud ourselves of pro-actively training and educating our workers according to DOB guidelines and new OSHA rules.</p>
+                    <div class="media-element d-flex justify-content-between">
+                        <div class="media">
+                            <i class="fa fa-magic mr-4"></i>
+                            <div class="media-body">
+                                <h5>We are located at</h5>
+                                178 Walworth St, Brooklyn, NY 11205
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">See More</a>
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
+                    <div class="featured-img">
+                        <img class="featured-medium" src="media/images/hat.png" alt="Featured 2">
+                        <img class="featured-medium" src="media/images/site2.png" alt="Featured 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured End -->
+    <!-- Recent Posts Start -->
+    <section class="recent-posts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right"
+                        data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <h3><a href="#">Dedicated</a></h3>
+
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="media/images/cindy.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="media/images/meeting.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <h3><a href="#">Always improving</a></h3>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-delay="200"
+                        data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <h3><a href="#">Focused </a></h3>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="media/images/focused.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-delay="200"
+                        data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="media/images/proud.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <h3><a href="#">Proud</a></h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-primary">See More</a>
+            </div>
+        </div>
+    </section>
+    <!-- Recent Posts End -->
+    <!-- Trust Start -->
+    <section class="trust">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-1 col-xl-6" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                    <div class="title">
+                        <h1>Involved in your project from the ground up</h1>
+                    </div>
+                    <p>We look forward to working with you, from the moment ground is broken to the finish day where we hold the flag hoisting ceremony.
+                    </p>
+                    <h5>We offer</h5>
+                    <ul class="list-unstyled">
+                        <li>Foundation/Excavation </li>
+                        <li>Concrete work</li>
+                        <li>Welding services</li>
+                        <li>Rebar and steel placement</li>
+                    </ul>
+                </div>
+                <div class="col-xl-5 gallery">
+                    <div class="row no-gutters h-100" id="">
+                        <a href="#" class="w-50 h-100 gal-img" data-aos="fade-up"
+                            data-aos-delay="200" data-aos-duration="400">
+                            <img class="img-fluid" src="media/images/foundation1.png" alt="Gallery Image">
+
+                        </a>
+                        <a href="#" class="w-50 h-50 gal-img" data-aos="fade-up"
+                            data-aos-delay="400" data-aos-duration="600">
+                            <img class="img-fluid" src="media/images/rebar1.png" alt="Gallery Image">
+
+                        </a>
+                        <a href="#" class="w-50 h-50 gal-img gal-img3" data-aos="fade-up"
+                            data-aos-delay="0" data-aos-duration="600">
+                            <img class="img-fluid" src="media/images/finish1.png" alt="Gallery Image">
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trust End -->
+
+    <!-- Call To Action 2 Start -->
+    <section class="cta cta2" data-aos="fade-up" data-aos-delay="0">
+        <div class="container">
+            <div class="cta-content d-xl-flex align-items-center justify-content-around text-center text-xl-left">
+                <div class="content" data-aos="fade-right" data-aos-delay="200">
+                    <h2>We are here for you</h2>
+                    <p>We can work together to create something everlasting, do not exitate contact us now.</p>
+                </div>
+                <div class="subscribe-btn" data-aos="fade-left" data-aos-delay="400" data-aos-offset="0">
+                    <a href="#" class="btn btn-primary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action 2 End -->
+    <!-- Footer Start -->
+    <footer>
+        <!-- Widgets Start -->
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="single-widget contact-widget" data-aos="fade-up" data-aos-delay="0">
+                            <h6 class="widget-tiltle">&nbsp;</h6>
+                            <div class="media">
+                                <i class="fa fa-map-marker"></i>
+                                <div class="media-body ml-3">
+                                    <h6>Address</h6>
+                                    178 Walworth st,<br>
+                                    Brooklyn, NY 11205
+                                </div>
+                            </div>
+                            <div class="media">
+                                <i class="fa fa-envelope-o"></i>
+                                <div class="media-body ml-3">
+                                    <h6>Have any questions?</h6>
+                                    <a href="mailto:rpinto@internationalconcrete.net">rpinto@internationalconcrete.net</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <i class="fa fa-phone"></i>
+                                <div class="media-body ml-3">
+                                    <h6>Call us</h6>
+                                    <a href="tel:(718) 280-5707"> (718) 280-5707</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Widgets End -->
+        <!-- Foot Note Start -->
+    </footer>
+    <!-- Footer Endt -->
+    <!--jQuery-->
+    <script src="{% static 'js/jquery-3.3.1.js' %}"></script>
+    <!--Plugins-->
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'js/loaders.css.js' %}"></script>
+    <script src="{% static 'js/aos.js' %}"></script>
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+    <script src="{% static 'js/lightgallery-all.min.js' %}"></script>
+    <!--Template Script-->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
