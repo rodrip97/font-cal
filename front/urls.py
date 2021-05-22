@@ -7,6 +7,7 @@ from .views import *
 
 urlpatterns = [
 
+    url('admin/', admin.site.urls),
     url(r'^$', index, name='index'),
     url('about', about, name='about'),
     url('portfolio', portfolio, name='portfolio'),
