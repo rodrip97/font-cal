@@ -3,6 +3,7 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from .views import *
+from . import views
 
 
 urlpatterns = [
@@ -12,6 +13,6 @@ urlpatterns = [
     url('about', about, name='about'),
     url('portfolio', portfolio, name='portfolio'),
     url('contact', contact, name='contact'),
-    url('calendar', calendar, name='calendar'),
+    url(r'^calendar/$', views.CalendarView.as_view(), name='calendar')
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

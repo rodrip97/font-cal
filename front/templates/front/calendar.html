@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Document title -->
-    <title>Contact</title>
+    <title>Calendar</title>
     <link rel="icon" type="image/png" href="{% static 'images/logo-2.png' %}">
     <!-- Stylesheets & Fonts -->
     <!-- Google Fonts -->
@@ -72,7 +72,17 @@
     </header>
     <!-- Header End -->
     <!-- Page Title -->
+    <br>
+    <div>
 
+            {{ calendar }}
+                 <div class="clearfix">
+	<a class="btn btn-info left" href="{% url 'calendar' %}?{{ prev_month }}"> Previous Month </a>
+	<a class="btn btn-info right" href="{% url 'calendar' %}?{{ next_month }}"> Next Month </a>
+         </div>
+
+    </div>
+    <br>
     <!-- Page Title End -->
     <!-- Footer Start -->
     <footer>
