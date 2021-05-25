@@ -1,14 +1,14 @@
 import calendar
 
 from django.core.mail import send_mail, BadHeaderError
-from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import render, redirect
-from .forms import *
-from .models import Event
-from front.utils import Calendar
-from django.views import generic
-from datetime import datetime,timedelta, date
+from django.http import HttpResponse
 from django.utils.safestring import mark_safe
+from django.shortcuts import render, redirect
+from django.views.generic import ListView
+from .forms import *
+from .utils import Calendar
+from .models import Event
+from datetime import datetime, date, timedelta
 
 
 def index(request):
@@ -46,7 +46,7 @@ def contact(request):
     return render(request, 'front/contact.html', {'form': form})
 
 
-class CalendarView(generic.ListView):
+class CalendarView(ListView):
     model = Event
     template_name = 'front/calendar.html'
 
@@ -61,9 +61,9 @@ class CalendarView(generic.ListView):
         return context
 
 
-def get_date(req_month):
-    if req_month:
-        year, month = (int(x) for x in req_month.split('-'))
+def get_date(req_day):
+    if req_day:
+        year, month = (int(x) for x in req_day.split('-'))
         return date(year, month, day=1)
     return datetime.today()
 
@@ -81,6 +81,3 @@ def next_month(d):
     next_month = last + timedelta(days=1)
     month = 'month=' + str(next_month.year) + '-' + str(next_month.month)
     return month
-
-
-
