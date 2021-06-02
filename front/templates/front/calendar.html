@@ -1,11 +1,107 @@
 {% load static %}
 {% block content %}
+<!doctype html>
+<html lang="en">
+<head>
 
-<div class="clearfix">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Document title -->
+    <title>Calendar</title>
+    <link rel="icon" type="image/png" href="{% static 'images/logo-2.png' %}">
+    <!-- Stylesheets & Fonts -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CRajdhani:400,600,700"
+        rel="stylesheet">
+    <!-- Plugins Stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/loader/loaders.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome/font-awesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aos/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/swiper/swiper.css '%}">
+    <link rel="stylesheet" href="{% static 'css/lightgallery.min.css '%}">
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+</head>
+
+<body>
+    <!-- Loader Start -->
+    <div class="css-loader">
+        <div class="loader-inner line-scale d-flex align-items-center justify-content-center"></div>
+    </div>
+    <!-- Loader End -->
+    <!-- Header Start -->
+    <header class="position-absolute w-100">
+        <div class="container">
+            <div class="top-header d-none d-sm-flex justify-content-between align-items-center">
+                <div class="contact">
+                    <a href="" class="tel"><i class="fa fa-phone" aria-hidden="true"></i>+718-280-5707</a>
+                    <a href=""><i class="fa fa-envelope"
+                            aria-hidden="true"></i>info@internationalconcrete.net</a>
+                </div>
+                <nav class="d-flex aic">
+                    <a href="#" class="login"><i class="fa fa-user" aria-hidden="true"></i>Login</a>
+                    <ul class="nav social d-none d-md-flex">
+                        <li><a href="https://www.facebook.com/International-Concrete-Inc-103279948096972/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/international_concrete/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="#"><img src="{% static 'front/logo.png' %}" alt=""></a>
+                <div class="group d-flex align-items-center">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="login-icon d-sm-none" href="#"><i class="fa fa-user"></i></a>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
+
+
+                    </ul>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+	<!--Calendar start -->
+
+    <!--Ignore this is here to make space between header and calendar -->
+<div>
+    <h1 style="color:white;">This is a heading</h1>
+    <h1 style="color:white;">This is a heading</h1>
+    <h1 style="color:white;">This is a heading</h1>
+</div>
+<!-- Spacing for calendar ends here  -->
+
+    <table style="background-color:#FFFFE0;">
+{{ calendar }}
+	<div class="clearfix">
 	<a class="btn btn-info left" href="{% url 'calendar' %}?{{ prev_month }}"> Previous Month </a>
 	<a class="btn btn-info right" href="{% url 'calendar' %}?{{ next_month }}"> Next Month </a>
 </div>
-{{ calendar }}
-
 
 {% endblock %}
+	<!--Calendar ends here -->
+    <!--jQuery-->
+    <script src="{% static 'js/jquery-3.3.1.js' %}"></script>
+    <!--Plugins-->
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'js/loaders.css.js' %}"></script>
+    <script src="{% static 'js/aos.js' %}"></script>
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+    <script src="{% static 'js/lightgallery-all.min.js' %}"></script>
+    <!--Template Script-->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

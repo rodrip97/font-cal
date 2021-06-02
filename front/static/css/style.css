@@ -546,95 +546,6 @@ margin-top 80;
   left: 50%;
 }
 
-/*-----------------------------------
-    1 - Pricing Table
-------------------------------------*/
-.pricing-table {
-  padding: 100px 0;
-}
-
-.single-pricing {
-  padding: 65px 0 40px;
-  margin-top: 23px;
-  color: #fff;
-  background: #26264b;
-  border: 0px solid #fff;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: all 0.2s ease-in-out;
-}
-
-.single-pricing span {
-  font-size: 12px;
-  text-transform: uppercase;
-  padding: 6px 15px;
-  border-radius: 15px;
-  background-color: transparent;
-  position: absolute;
-  top: 28px;
-  right: 6px;
-  transition: all 0.2s ease-in-out;
-}
-
-.single-pricing h2 {
-  margin-bottom: -5px;
-}
-
-.single-pricing .desc {
-  color: #9d9d9d;
-  padding-bottom: 30px;
-  margin-bottom: 32px;
-  border-bottom: 2px solid #2f2f2f;
-  transition: all 0.2s ease-in-out;
-}
-
-.single-pricing .price {
-  font-size: 2rem;
-  margin-bottom: 8px;
-}
-
-.single-pricing p {
-  color: #ddd;
-}
-
-.single-pricing p:last-of-type {
-  margin-bottom: 25px;
-}
-
-.single-pricing svg {
-  width: 170px;
-  position: absolute;
-  top: -45px;
-  right: -60px;
-  z-index: -1;
-  transition: all 0.5s ease-in-out;
-}
-
-.single-pricing:hover {
-  border: 4px solid #fff;
-  box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.16);
-  margin: 19px 0 -4px;
-}
-
-.single-pricing:hover span {
-  background-color: #26264b;
-}
-
-.single-pricing:hover .desc {
-  color: #fff;
-  border-bottom: 2px solid rgba(245, 245, 245, 0.322);
-}
-
-.single-pricing:hover svg {
-  width: 500%;
-  top: -200%;
-  right: -50%;
-}
-
-.single-pricing:hover .btn {
-  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
-}
 
 /*-----------------------------------
     1 - Testimonials
@@ -782,7 +693,7 @@ footer {
 }
 
 span {
-  color: #fff;
+  color: black;
 }
 
 .recent-post-widget .rcnt-img {
@@ -936,7 +847,7 @@ ul {
 }
 
 a {
-  color: #17a2b8;
+  color: f7786b;
 }
 
 .left {
@@ -956,5 +867,13 @@ a {
 
 .clearfix {
   margin: 15px;
+  }
+
+  body {
+  color: black;
+
+  background{
+  color: red;
+  }
 }
 /*--- end calendar CSS properties ---*/
